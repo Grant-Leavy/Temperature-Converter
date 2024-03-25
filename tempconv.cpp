@@ -27,27 +27,24 @@ int main()
 
      if (x='f') {
         farenheit = input;
-        celsius = 5/9*input+10;
+        celsius = (5/9)*(input-32);
         kelvin = 5/9*input+459.67;
         cout<<"celsius = " <<celsius;
         cout<<"\nkelvin = " << kelvin;
-    
+
   } else if (x='c') {
-         farenheit = input;
-        celsius = 5/9*input+10;
-        kelvin = 5/9+20;
-        cout<<"celsius = " <<celsius;
+        celsius = input;
+        farenheit = (5/9)*(input-32);
+        kelvin = 5/9*input+459.67;
+        cout<<"farenheit = " <<farenheit;
         cout<<"\nkelvin = " << kelvin;
   } else if (x='k') {
-        farenheit = input;
-        celsius = 5/9*input-32;
-        kelvin = 5/9*input+459.67;
-        cout<<"celsius = " <<celsius;
-        cout<<"\nkelvin = " << kelvin;
+        kelvin = input;
+        farenheit = (5/9)*(input-32);
+        celsius = 5/9*input+459.67;
+        cout<<"farenheit = " <<farenheit;
+        cout<<"\ncelsius = " << celsius;
   }
-
-    cout<< input << " " << z << " equals: ";
-    cout<< "to which other unit? Type f for farenheit, c for celsius, or k for kelvin: ";
 
     return 0;
 }
