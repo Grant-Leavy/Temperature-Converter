@@ -1,0 +1,10 @@
+Unix/Linux:
+
+    line end charater is '\n'   (newline)
+
+Windows:
+
+    line termination is by '\r\n'    (sort takes 2 characters to go to next line)
+
+Very old macs sometimes also used: \r
+I haven't seen this in ages.
