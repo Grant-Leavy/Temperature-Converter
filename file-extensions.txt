@@ -1,0 +1,11 @@
+C language:
+
+.c
+.h
+
+C++:
+
+.cpp     <-- C++ source code
+.h       <-- C/C++ headers (include files)
+.cc
+.hpp
