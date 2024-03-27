@@ -6,17 +6,17 @@ int main(int argc, char *argv[])
 {
   const double zero_celsius_in_kelvin = 273.15;
 
-  double input, farenheit, celsius, kelvin;
+  double input, fahrenheit, celsius, kelvin;
   char x, y;
   string z;
 
   cout << "Welcome to your favorite temperature conversion calculator!\n\n";
-  cout << "Which temperature unit would you like to convert from? Type f for farenheit, c for celsius, or k for kelvin: ";
+  cout << "Which temperature unit would you like to convert from? Type f for fahrenheit, c for celsius, or k for kelvin: ";
   cin >> x;
 
   if (x == 'f')
   {
-    z = "farenheit";
+    z = "fahrenheit";
   }
   else if (x == 'c')
   {
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
   if (x == 'f')
   {
-    farenheit = input;
+    fahrenheit = input;
     celsius = (5 / 9) * (input - 32);
     kelvin = (5 / 9) * (input - 32) + zero_celsius_in_kelvin;
     cout << "celsius = " << celsius;
@@ -41,17 +41,17 @@ int main(int argc, char *argv[])
   else if (x == 'c')
   {
     celsius = input;
-    farenheit = (9 / 5) * input + 32;
+    fahrenheit = (9 / 5) * input + 32;
     kelvin = input + zero_celsius_in_kelvin;
-    cout << "farenheit = " << farenheit;
+    cout << "fahrenheit = " << fahrenheit;
     cout << "\nkelvin = " << kelvin;
   }
   else if (x == 'k')
   {
     kelvin = input;
-    farenheit = (9 / 5) * (input - zero_celsius_in_kelvin) + 32;
+    fahrenheit = (9 / 5) * (input - zero_celsius_in_kelvin) + 32;
     celsius = input - zero_celsius_in_kelvin;
-    cout << "farenheit = " << farenheit;
+    cout << "fahrenheit = " << farenheit;
     cout << "\ncelsius = " << celsius;
   }
 
