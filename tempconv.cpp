@@ -33,15 +33,15 @@ int main(int argc, char *argv[])
   if (x == 'f')
   {
     fahrenheit = input;
-    celsius = (5 / 9) * (input - 32);
-    kelvin = (5 / 9) * (input - 32) + zero_celsius_in_kelvin;
+    celsius = (5.0 / 9.0) * (input - 32.0);
+    kelvin = (5.0 / 9.0) * (input - 32.0) + zero_celsius_in_kelvin;
     cout << "celsius = " << celsius;
     cout << "\nkelvin = " << kelvin;
   }
   else if (x == 'c')
   {
     celsius = input;
-    fahrenheit = (9 / 5) * input + 32;
+    fahrenheit = (9.0 / 5.0) * input + 32.0;
     kelvin = input + zero_celsius_in_kelvin;
     cout << "fahrenheit = " << fahrenheit;
     cout << "\nkelvin = " << kelvin;
@@ -49,9 +49,9 @@ int main(int argc, char *argv[])
   else if (x == 'k')
   {
     kelvin = input;
-    fahrenheit = (9 / 5) * (input - zero_celsius_in_kelvin) + 32;
+    fahrenheit = (9.0 / 5.0) * (input - zero_celsius_in_kelvin) + 32.0;
     celsius = input - zero_celsius_in_kelvin;
-    cout << "fahrenheit = " << farenheit;
+    cout << "fahrenheit = " << fahrenheit;
     cout << "\ncelsius = " << celsius;
   }
 
